@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        body {
+            background-image: url("images/pattern-background-desktop.svg");
+            background-repeat: no-repeat;
+            margin: 10%;
+            background-color: hsl(225, 100%, 94%);
+        }
+        
+        .order-outer {
+            display: flex;
+            flex-direction: column;
+            margin: 10% 30%;
+            border-radius: 12px;
+            width: 350px;
+        }
+        
+        .order-summary-component img {
+            display: block;
+            max-width: 100%;
+            border-radius: 12px 12px 0 0;
+        }
+        
+        .music-icon {
+            width: 100px;
+            margin: 25px;
+        }
+        
+        .annual-plan {
+            width: 150px;
+        }
+        
+        .annual-plan h4 {
+            text-align: center;
+            padding-top: - 50px;
+            color: hsl(224, 23%, 55%);
+        }
+        
+        .order-plan {
+            display: flex;
+            align-items: center;
+            background-color: hsl(225, 100%, 94%);
+            border-radius: 12px;
+            margin: 0 25px 0 25px;
+        }
+        
+        .change-link {
+            margin: 25px;
+        }
+        
+        .order-summary h3 {
+            text-align: center;
+            color: hsl(223, 47%, 23%);
+        }
+        
+        .order-summary p {
+            font-size: 15px;
+            padding: 15px;
+            margin: 25px;
+            font-size: 16px;
+            color: hsl(224, 23%, 55%);
+        }
+        
+        .button #pay {
+            padding: 10px;
+            border-color: transparent;
+            border-radius: 12px;
+            background-color: hsl(245, 75%, 52%);
+            margin: 10px;
+            width: 250px;
+            color: #fff;
+        }
+        
+        .lower {
+            background-color: #ffffff;
+            border-radius: 0 0 12px 12px;
+        }
+        
+        .button {
+            padding-bottom: 25px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        span {
+            color: hsl(223, 47%, 23%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="order-outer">
+        <div class="order-summary-component">
+            <img src="images/illustration-hero.svg" alt="Product Picture">
+        </div>
+        <div class="lower">
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+            </div>
+
+            <div class="order-plan">
+                <div class="music-icon">
+                    <img src="images/icon-music.svg" alt="Music Icon">
+                </div>
+                <div class="annual-plan">
+                    <h4><span>Annual Plan</span> <br> $59.99/year</h4>
+                </div>
+                <div class="change-link">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+            <div class="order-buttons">
+                <div class="button">
+                    <center><a href="#"><button id="pay">Proceed to payment</button></a></center>
+                </div>
+                <div class="button">
+                    <center><a href="#">Cancel Order</a></center>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
